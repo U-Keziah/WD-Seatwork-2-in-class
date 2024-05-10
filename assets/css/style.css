@@ -1,0 +1,73 @@
+* {
+    padding 0;
+    margin 0;
+
+}
+
+header,
+header*{
+    outline: 1px blu dashed;
+}
+
+section.hero,
+section.hero * {
+    outine: 1px red dashed;
+}
+
+header {
+    display: flex;
+    justify-content: space between;
+    padding: .3rem .5rem 0;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+}
+
+header button {
+    padding: .5rem 1rem;
+    border: none;
+    background: transparent;
+    font-weight: 600;    
+    cursor: pointer;
+}
+
+section.hero{
+    display: flex;
+    margin: .3ren 5vw 0;
+    height: 100%;
+    padding-top: 5%;
+
+    & .right {
+        width: 70%;
+    }
+
+    & .left{
+        width: 130%;
+    }
+}
+
+section.hero .left{
+    flex-direction: column;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+
+    &h3 {
+        font-size: 1.5rem;
+    }
+
+    &h1 {
+        font-size: 5rem;
+    }
+
+    &h2 {
+        font-size: 3.5rem;
+    }
+    
+    &p {
+        font-size:1.5 rem;
+    }
+}
